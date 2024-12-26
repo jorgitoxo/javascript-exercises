@@ -3,11 +3,9 @@ const fibonacci = function(num) {
     let fiboNum = 0;
     const fiboPos = parseInt(num);
 
-    if (fiboPos === 0)
-        return fiboBuffer.n1;
     if (fiboPos === 1)
         return fiboBuffer.n2;
-    
+
     for (let i = 2; i <= fiboPos; i++) {
         fiboNum = fiboBuffer.n1 + fiboBuffer.n2;
         fiboBuffer.n1 = fiboBuffer.n2;
